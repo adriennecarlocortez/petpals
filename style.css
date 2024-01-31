@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Irish+Grover&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  padding-left: 180px;
+  padding-top: 90px;
+  min-height: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(241, 230, 150, 0.5),
+      rgba(241, 230, 150, 0.5)
+    ),
+    url(cockatiel-bg.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.nav {
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+.nav-title {
+  font-size: 1.75rem;
+  margin-right: auto;
+  font-weight: 400;
+  font-family: "Irish Grover", sans-serif;
+  align-self: end; /* Need to be centered to icon */
+}
+.nav-icon {
+  height: 40px;
+  margin-right: 7px;
+}
+
+.main {
+  padding-top: 20px;
+}
+.main-date {
+  background-color: #5c22ff;
+  width: max-content;
+  font-size: 0.9rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+.main-opening {
+  max-width: 513px;
+  font-size: 3.1rem;
+  font-weight: 500;
+  padding-top: 25px;
+}
+.main-text {
+  padding: 25px 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  max-width: 400px;
+}
+.main-email {
+  max-width: 400px;
+  width: 100%;
+  border: 1px inset #5c22ff;
+  border-radius: 5px 0 0 5px;
+  padding: 10px;
+  font-size: 1rem;
+  color: #959595;
+  outline: none;
+  margin-right: 0;
+}
+.main-btn {
+  background-color: #5c22ff;
+  width: max-content;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #5c22ff;
+  margin-left: -5px;
+  cursor: pointer;
+}
+
+.nav-title,
+.main-opening,
+.main-text {
+  color: #5c22ff;
+}
+
+.main-date,
+.main-btn {
+  color: #fff;
+}
+
+@media all and (min-width: 420px) and (max-width: 768px) {
+  body {
+    padding-top: 0px;
+    padding-left: 30px;
+  }
+  /* .main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+  } */
+  .nav {
+    visibility: hidden;
+  }
+  .main-email,
+  .main-btn {
+    width: max-content;
+  }
+}
+
+@media all and (max-width: 420px) {
+  body {
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .nav {
+    visibility: hidden;
+  }
+  .main-btn {
+    margin-left: 0;
+  }
+  .main-email,
+  .main-btn {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+}
