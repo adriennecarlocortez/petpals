@@ -9,7 +9,7 @@
 }
 body {
   padding-left: 180px;
-  padding-top: 90px;
+  padding-block: 90px;
   min-height: 100%;
   background: linear-gradient(
       0deg,
